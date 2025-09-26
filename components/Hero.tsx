@@ -13,7 +13,7 @@ const Hero = () => {
     try {
       await navigator.clipboard.writeText(contractAddress);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000); // volta ao normal depois de 2s
+      setTimeout(() => setCopied(false), 2000);  
     } catch (err) {
       console.error("Erro ao copiar:", err);
     }
